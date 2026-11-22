@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>College Lost & Found Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><!-- Navigation Bar -->
+
+<header>
+    <div class="logo">Lost & Found</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#items">Explore Items</a>
+        <a href="#report">Report Item</a>
+    </nav>
+</header>
+
+
+<!-- Home Section -->
+
+<section class="hero" id="home">
+
+    <h1>Lost Something? Found Something?</h1>
+
+    <p>
+        Helping students reconnect with their lost belongings.
+    </p>
+
+    <a href="#report" class="btn">Report an Item</a>
+
+</section>
+
+
+<!-- Lost and Found Items Section -->
+
+<section class="items-section" id="items">
+
+    <h1>Explore Items</h1>
+
+    <p>Find your lost belongings on campus.</p>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search items..."
+    >
+
+    <div class="item-sections">
+
+        <!-- Lost Items -->
+
+        <div class="item-box">
+
+            <h2>📦 Lost Items</h2>
+
+            <div id="lostList" class="item-container">
+                <p>No lost items found.</p>
+            </div>
+
+        </div>
+
+
+        <!-- Found Items -->
+
+        <div class="item-box">
+
+            <h2>🔍 Found Items</h2>
+
+            <div id="foundList" class="item-container">
+                <p>No found items available.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Report Item Section -->
+
+<section class="report" id="report">
+
+    <h2>Report Lost or Found Item</h2>
+
+    <form id="itemForm">
+        <label for="itemImage">Upload Item Image</label>
+
+<input
+    type="file"
+    id="itemImage"
+    accept="image/*"
+>
+
+        <input
+            type="text"
+            id="itemName"
+            placeholder="Enter item name"
+            required
+        >
+
+        <select id="itemType" required>
+
+            <option value="">Select Item Type</option>
+
+            <option value="Lost">Lost Item</option>
+
+            <option value="Found">Found Item</option>
+
+        </select>
+
+        <input
+            type="text"
+            id="location"
+            placeholder="Where was it lost/found?"
+            required
+        >
+
+        <input
+            type="text"
+            id="contact"
+            placeholder="Contact information"
+            required
+        >
+
+        <button type="submit">Submit Report</button>
+
+    </form>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>© 2026 College Lost & Found Portal</p>
+
+    <p>Helping Students Find Their Belongings</p>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script type="module" src="script.js"></script>
+
+</body></html>
